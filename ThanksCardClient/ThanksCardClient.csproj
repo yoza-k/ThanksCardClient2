@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\3a9e98ebcfa94f65587b97983c20483f.png" />
+    <None Remove="Views\83979393_480x470.png" />
+    <None Remove="Views\f56d7dbb1607bbf89ee96c187dad8930.jpg" />
+    <None Remove="Views\publicdomainq-0009738udz.jpg" />
+    <None Remove="Views\publicdomainq-0039164glc.jpg" />
+    <None Remove="Views\thumb_d24f11bb80c7bc8695b17b3b4b9abbd2.png" />
+    <None Remove="Views\_honu-01.png" />
     <None Remove="Views\ログイン画面.PNG" />
   </ItemGroup>
 
@@ -17,6 +24,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Views\3a9e98ebcfa94f65587b97983c20483f.png" />
+    <Resource Include="Views\83979393_480x470.png" />
+    <Resource Include="Views\f56d7dbb1607bbf89ee96c187dad8930.jpg" />
+    <Resource Include="Views\publicdomainq-0009738udz.jpg" />
+    <Resource Include="Views\publicdomainq-0039164glc.jpg" />
+    <Resource Include="Views\thumb_d24f11bb80c7bc8695b17b3b4b9abbd2.png" />
+    <Resource Include="Views\_honu-01.png" />
     <Resource Include="Views\ログイン画面.PNG" />
   </ItemGroup>
 

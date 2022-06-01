@@ -5,17 +5,42 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ThanksCardClient.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+             d:DesignHeight="450" d:DesignWidth="800" Width="800" Height="450">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Views/publicdomainq-0039164glc.jpg" Stretch="Fill"/>
+    </UserControl.Background>
+    <Grid Margin="148,154,150,0" Height="274" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/Views/ログイン画面.PNG"/>
         </Grid.Background>
-        <TextBox HorizontalAlignment="Left" Height="71" Margin="338,40,0,0" TextWrapping="Wrap" Text="TOMOYOSE&#xD;&#xA;HOTEL" VerticalAlignment="Top" Width="144" BorderBrush="#FFF8FAFF" FontSize="24" FontFamily="Algerian" Foreground="#FFF41010"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="426,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="426,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="352,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Text="PASS" BorderBrush="#FFFEFEFF" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="352,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Text="名前" BorderBrush="#FFFEFEFF" FontSize="24"/>
-        <Button Content="ログイン" HorizontalAlignment="Left" Height="28" Margin="498,197,0,0" VerticalAlignment="Top" Width="63"/>
+        <TextBox HorizontalAlignment="Left" Margin="214,28,0,186" TextWrapping="Wrap" Text="TOMOYOSE&#xA;HOTEL" Width="126" BorderBrush="#FFF8FAFF" FontSize="24" FontFamily="Algerian" Foreground="#FFF41010" Grid.Column="1" RenderTransformOrigin="0.819,0.561"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="260,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" SelectionBrush="#FFCC00D7" BorderBrush="#FF3858B7" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="PASS" BorderBrush="#FFFEFEFF" FontSize="20" RenderTransformOrigin="0.5,1.672" Margin="205,146,0,0" FontWeight="Bold" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="260,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" SelectionBrush="#FFCC00D7" BorderBrush="#FF163698" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="205,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" Text="名前" BorderBrush="#FFFEFEFF" FontSize="20" FontWeight="Bold" Grid.Column="1" RenderTransformOrigin="-0.942,-2.345"/>
+        <Button Content="ログイン" HorizontalAlignment="Left" Height="34" Margin="260,178,0,0" VerticalAlignment="Top" Width="80" FontSize="18" BorderBrush="#FFCE6F0D" Grid.Column="1"/>
+        <TextBlock Grid.ColumnSpan="2" Margin="360,-92,-102,152" TextWrapping="Wrap">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Views/83979393_480x470.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock Grid.ColumnSpan="2" Margin="-125,-92,409,184" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-9.615"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-15.331"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Views/3a9e98ebcfa94f65587b97983c20483f.png"/>
+            </TextBlock.Background>
+        </TextBlock>
 
     </Grid>
 </UserControl>
