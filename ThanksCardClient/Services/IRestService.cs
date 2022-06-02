@@ -28,9 +28,9 @@ namespace ThanksCardClient.Services
         Task<Department> PutDepartmentAsync(Department department);
         Task<Department> DeleteDepartmentAsync(long Id);
 
-        //// TanksCard REST API Client
-        //Task<List<ThanksCard>> GetThanksCardsAsync();
-        //Task<ThanksCard> PostThanksCardAsync(ThanksCard thanksCard);
+        // TanksCard REST API Client
+        Task<List<ThanksCard>> GetThanksCardsAsync();
+        Task<ThanksCard> PostThanksCardAsync(ThanksCard thanksCard);
 
         //// Tag REST API Client
         //Task<List<Tag>> GetTagsAsync();

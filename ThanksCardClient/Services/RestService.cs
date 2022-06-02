@@ -208,41 +208,41 @@ namespace ThanksCardClient.Services
             return responseDepartment;
         }
 
-        //public async Task<List<ThanksCard>> GetThanksCardsAsync()
-        //{
-        //    List<ThanksCard> responseThanksCards = null;
-        //    try
-        //    {
-        //        var response = await Client.GetAsync(this.BaseUrl + "/api/ThanksCards");
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            responseThanksCards = await response.Content.ReadFromJsonAsync<List<ThanksCard>>();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        System.Diagnostics.Debug.WriteLine("Exception in RestService.GetThanksCardsAsync: " + e);
-        //    }
-        //    return responseThanksCards;
-        //}
+        public async Task<List<ThanksCard>> GetThanksCardsAsync()
+        {
+            List<ThanksCard> responseThanksCards = null;
+            try
+            {
+                var response = await Client.GetAsync(this.BaseUrl + "/api/ThanksCards");
+                if (response.IsSuccessStatusCode)
+                {
+                    responseThanksCards = await response.Content.ReadFromJsonAsync<List<ThanksCard>>();
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine("Exception in RestService.GetThanksCardsAsync: " + e);
+            }
+            return responseThanksCards;
+        }
 
-        //public async Task<ThanksCard> PostThanksCardAsync(ThanksCard thanksCard)
-        //{
-        //    ThanksCard responseThanksCard = null;
-        //    try
-        //    {
-        //        var response = await Client.PostAsJsonAsync(this.BaseUrl + "/api/ThanksCards", thanksCard);
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            responseThanksCard = await response.Content.ReadFromJsonAsync<ThanksCard>();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        System.Diagnostics.Debug.WriteLine("Exception in RestService.PostThanksCardAsync: " + e);
-        //    }
-        //    return responseThanksCard;
-        //}
+        public async Task<ThanksCard> PostThanksCardAsync(ThanksCard thanksCard)
+        {
+            ThanksCard responseThanksCard = null;
+            try
+            {
+                var response = await Client.PostAsJsonAsync(this.BaseUrl + "/api/ThanksCards", thanksCard);
+                if (response.IsSuccessStatusCode)
+                {
+                    responseThanksCard = await response.Content.ReadFromJsonAsync<ThanksCard>();
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine("Exception in RestService.PostThanksCardAsync: " + e);
+            }
+            return responseThanksCard;
+        }
 
         //public async Task<List<Tag>> GetTagsAsync()
         //{
