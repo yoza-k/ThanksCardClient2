@@ -6,13 +6,13 @@
              xmlns:local="clr-namespace:ThanksCardClient.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Foreground="#FF78D89D" Background="#FF78D89D" Width="800" Height="450">
-    <Grid HorizontalAlignment="Center" Height="398" VerticalAlignment="Center" Width="704">
+    <Grid HorizontalAlignment="Center" Height="400" VerticalAlignment="Center" Width="700" Margin="50,25,50,25">
         <Grid.Background>
             <ImageBrush ImageSource="/Views/f56d7dbb1607bbf89ee96c187dad8930.jpg"/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Center" Height="32" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" FontSize="24" Foreground="#FF3540EC" Background="#FFF1A2E3" FontWeight="Bold"><Run Language="ja-jp" Text="&lt;&lt;MENU&gt;&gt;"/></TextBlock>
-        <Button Content="ログアウト" HorizontalAlignment="Left" Height="32" Margin="562,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFDA7B7B"/>
-        <TextBlock HorizontalAlignment="Left" Height="69" Margin="139,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="387" FontSize="24" Foreground="#FFEC1BC7" FontWeight="Bold"><Run Text="TOMOYOSEホテルの従業員の皆さま"/><Run Language="ja-jp" Text="、"/><LineBreak/><Run Language="ja-jp" Text="お仕事お疲れ様です。"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="54" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" FontSize="36" Foreground="#FF3540EC" FontWeight="Bold"><Run Language="ja-jp" Text="&lt;&lt;MENU&gt;&gt;"/></TextBlock>
+        <Button Content="ログアウト" HorizontalAlignment="Left" Height="32" Margin="562,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD"/>
+        <TextBlock HorizontalAlignment="Center" Height="70" Margin="0,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="24" Foreground="#FFEC1BC7" FontWeight="Bold"><Run Text="TOMOYOSEホテルの従業員の皆さま"/><Run Language="ja-jp" Text="、"/><LineBreak/><Run Language="ja-jp" Text="お仕事お疲れ様です。"/><LineBreak/><Run/></TextBlock>
         <Button Content="" HorizontalAlignment="Left" Height="69" Margin="93,156,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Views/publicdomainq-0046419vpp (1).png"/>
@@ -33,9 +33,9 @@
                 <ImageBrush ImageSource="/Views/publicdomainq-0046419vpp (1).png"/>
             </Button.Background>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Height="21" Margin="71,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Foreground="#FF120805" FontSize="16"><Run Language="ja-jp" Text="感謝カードメニュー"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="21" Margin="330,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Foreground="#FF120805" FontSize="16"><Run Language="ja-jp" Text="掲示板"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="21" Margin="531,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Foreground="#FF120805" FontSize="16"><Run Language="ja-jp" Text="マニュアル"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" Foreground="#FF120805" FontSize="16"><Run Text="感謝カード"/><Run Language="ja-jp" Text="作成"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="71,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Foreground="#FF120805" FontSize="16" FontWeight="Bold"><Run Language="ja-jp" Text="感謝カードメニュー"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Foreground="#FF120805" FontSize="16" TextAlignment="Center" FontWeight="Bold"><Run Language="ja-jp" Text="掲示板"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="531,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Foreground="#FF120805" FontSize="16" FontWeight="Bold"><Run Language="ja-jp" Text="マニュアル"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" Foreground="#FF120805" FontSize="16" TextAlignment="Center" FontWeight="Bold"><Run Text="感謝カード"/><Run Language="ja-jp" Text="作成"/></TextBlock>
     </Grid>
 </UserControl>
