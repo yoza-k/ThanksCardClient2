@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="Views\3a9e98ebcfa94f65587b97983c20483f.png" />
+    <None Remove="Views\43ad448330c42271da75a8ec071c7dba_t.jpeg" />
     <None Remove="Views\83979393_480x470.png" />
     <None Remove="Views\f56d7dbb1607bbf89ee96c187dad8930.jpg" />
+    <None Remove="Views\images.jpg" />
     <None Remove="Views\images.png" />
     <None Remove="Views\publicdomainq-0009738udz.jpg" />
     <None Remove="Views\publicdomainq-0039164glc.jpg" />
@@ -28,8 +30,10 @@
 
   <ItemGroup>
     <Resource Include="Views\3a9e98ebcfa94f65587b97983c20483f.png" />
+    <Resource Include="Views\43ad448330c42271da75a8ec071c7dba_t.jpeg" />
     <Resource Include="Views\83979393_480x470.png" />
     <Resource Include="Views\f56d7dbb1607bbf89ee96c187dad8930.jpg" />
+    <Resource Include="Views\images.jpg" />
     <Resource Include="Views\images.png" />
     <Resource Include="Views\publicdomainq-0009738udz.jpg" />
     <Resource Include="Views\publicdomainq-0039164glc.jpg" />
