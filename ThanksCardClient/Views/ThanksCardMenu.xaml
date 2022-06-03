@@ -1,11 +1,11 @@
 ﻿<UserControl x:Class="ThanksCardClient.Views.ThanksCardMenu"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ThanksCardClient.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Width="800" Height="450" Background="#FF8DDAAB">
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800" Width="800" Height="450" Background="#FF78D89D">
     <Grid Margin="50,25,50,25" HorizontalAlignment="Right" Width="700" Height="400" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="24*"/>
@@ -16,28 +16,28 @@
         </Grid.Background>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="49" Margin="222,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" FontSize="36"><Run Language="ja-jp" Text="感謝カードメニュー"/></TextBlock>
         <Button Content="マニュアル" HorizontalAlignment="Left" Height="32" Margin="94,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD" Grid.Column="1"/>
-        <Button Content="MENU" HorizontalAlignment="Left" Height="32" Margin="216,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD" Grid.Column="1"/>
-        <Button Content="" HorizontalAlignment="Left" Height="69" Margin="91,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Button Content="MENU" Command="{Binding MainMenuCommand}" HorizontalAlignment="Left" Height="32" Margin="216,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD" Grid.Column="1"/>
+        <Button Content="" Command="{Binding ReceiveCardListCommand}" HorizontalAlignment="Left" Height="69" Margin="91,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Views/images.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Height="69" Margin="314,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.ColumnSpan="2">
+        <Button Content="" Command="{Binding SendCardListCommand}" HorizontalAlignment="Left" Height="69" Margin="314,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.ColumnSpan="2">
             <Button.Background>
                 <ImageBrush ImageSource="/Views/images.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Height="69" Margin="185,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1">
+        <Button Content="" Command="{Binding GoodCardListCommand}" HorizontalAlignment="Left" Height="69" Margin="185,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1">
             <Button.Background>
                 <ImageBrush ImageSource="/Views/images.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Height="69" Margin="68,272,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1">
+        <Button Content="" Command="{Binding SendCommentList}" HorizontalAlignment="Left" Height="69" Margin="68,272,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1">
             <Button.Background>
                 <ImageBrush ImageSource="/Views/images.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Height="69" Margin="211,272,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Button Content="" Command="{Binding ReceiveCommentListCommand}" HorizontalAlignment="Left" Height="69" Margin="211,272,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Views/images.png"/>
             </Button.Background>

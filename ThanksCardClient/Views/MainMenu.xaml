@@ -3,19 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ThanksCardClient.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Foreground="#FF78D89D" Background="#FF8DDAAB" Width="800" Height="450">
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800" Foreground="#FF78D89D" Background="#FF78D89D" Width="800" Height="450">
     <Grid HorizontalAlignment="Center" Height="400" VerticalAlignment="Center" Width="700" Margin="50,25,50,25">
         <Grid.Background>
             <ImageBrush ImageSource="/Views/f56d7dbb1607bbf89ee96c187dad8930.jpg"/>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Center" Height="54" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" FontSize="36" Foreground="#FF3540EC" FontWeight="Bold"><Run Language="ja-jp" Text="&lt;&lt;MENU&gt;&gt;"/></TextBlock>
-        <Button Content="ログアウト" HorizontalAlignment="Left" Height="32" Margin="562,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD"/>
+        <Button Content="ログアウト" Command="{Binding LogoutCommand}" HorizontalAlignment="Left" Height="32" Margin="562,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD"/>
         <TextBlock HorizontalAlignment="Center" Height="70" Margin="0,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="24" Foreground="#FFEC1BC7" FontWeight="Bold"><Run Text="TOMOYOSEホテルの従業員の皆さま"/><Run Language="ja-jp" Text="、"/><LineBreak/><Run Language="ja-jp" Text="お仕事お疲れ様です。"/><LineBreak/><Run/></TextBlock>
-        <Button Content="" HorizontalAlignment="Left" Height="69" Margin="93,156,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Button Content="" Command="{Binding ThanksCardMenuCommand}" HorizontalAlignment="Left" Height="69" Margin="93,156,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="publicdomainq-0046419vpp(1).png"/>
             </Button.Background>
