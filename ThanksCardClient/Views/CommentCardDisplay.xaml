@@ -6,8 +6,31 @@
              xmlns:local="clr-namespace:ThanksCardClient.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FF78D89D" Width="800" Height="450">
-        <Rectangle HorizontalAlignment="Center" Height="430" Stroke="Black" VerticalAlignment="Center" Width="322" Fill="#FFE09FF9"/>
+    <Grid Background="#FF8DDAAB" Width="800" Height="450">
+        <Rectangle HorizontalAlignment="Center" Height="430" Stroke="Black" VerticalAlignment="Center" Width="322" Fill="#FFF9F36A"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="250,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFE8469F" RenderTransformOrigin="-0.098,0.05"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="304,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFE8469F" RenderTransformOrigin="-0.098,0.05"/>
+        <Ellipse HorizontalAlignment="Center" Height="48" Margin="0,88,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFE8469F" RenderTransformOrigin="-0.098,0.05"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="443,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFE8469F" RenderTransformOrigin="-0.098,0.05"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="496,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFE8469F" RenderTransformOrigin="-0.098,0.05"/>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="262,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Language="ja-jp" Text="コ"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="316,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Language="ja-jp" Text="メ"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="49" Margin="0,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Language="ja-jp" Text="ン"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="454,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Language="ja-jp" Text="ト"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="508,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FFFDFBFB"><Run Language="ja-jp" Text="!!"/><Run Text="あ"/></TextBlock>
+        <DatePicker HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="109" Margin="248,28,0,0" BorderBrush="{x:Null}"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="303,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" FontSize="14" TextAlignment="Center"><Run Language="ja-jp" Text="To:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="334,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="400,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="456,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" FontSize="14" TextAlignment="Center"><Run Language="ja-jp" Text="様"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="277,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center" FontSize="11"><Run Language="ja-jp" Text="関連メール"/><Run Text="："/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="334,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text="(例)newbie/system/requirement_definition" FontSize="9"/>
+        <TextBox HorizontalAlignment="Center" Height="144" Margin="0,231,0,0" TextWrapping="Wrap" Text="(例)&#xA;感謝カードを送ってくださり、ありがとうございました。&#xA;とても素敵なメッセージに心をうたれました。&#xA;&#xA;私もご一緒にお仕事をすることができて、&#xA;とても楽しかったです。&#xA;今後もどうぞよろしくお願いいたします。" VerticalAlignment="Top" Width="276" BorderBrush="#FF0643F9"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="304,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"><Run Language="ja-jp" Text="FROM:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="352,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="416,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <Button Content="戻る" HorizontalAlignment="Left" Height="27" Margin="490,402,0,0" VerticalAlignment="Top" Width="65" FontSize="20" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
+        <Button Content="PDFで保存" HorizontalAlignment="Left" Height="21" Margin="257,59,0,0" VerticalAlignment="Top" Width="60"/>
 
     </Grid>
 </UserControl>
