@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ThanksCardClient.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FF78D89D" Width="800" Height="450">
+    <Grid Background="#FF8DDAAB" Width="800" Height="450">
         <Rectangle HorizontalAlignment="Center" Height="280" Stroke="Black" VerticalAlignment="Center" Width="500" Fill="#FFE6A2F1"/>
         <Button Content="MENU" HorizontalAlignment="Left" Height="32" Margin="514,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
         <Button Content="戻る" HorizontalAlignment="Left" Height="32" Margin="653,391,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
