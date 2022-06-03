@@ -25,17 +25,17 @@
         <TextBlock HorizontalAlignment="Center" Height="49" Margin="0,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold"><Run Language="ja-jp" Text="が"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="49" Margin="454,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold"><Run Language="ja-jp" Text="と"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="49" Margin="508,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold"><Run Language="ja-jp" Text="う"/><Run Text="あ"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="15" Margin="331,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" FontSize="14" TextAlignment="Center"><Run Language="ja-jp" Text="To:"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="357,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" TextAlignment="Center"><Run Language="ja-jp" Text="経理部"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="405,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"><Run Text="鈴木"/><Run Language="ja-jp" Text="○○"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="18" Margin="456,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" FontSize="14" TextAlignment="Center"><Run Language="ja-jp" Text="様"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="15" Margin="297,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center"><Run Text="タイトル"/><Run Language="ja-jp" Text="："/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="15" Margin="357,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" TextAlignment="Left"><Run Text="入力作業を手伝って"/><Run Language="ja-jp" Text="いただいた件"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Height="144" Margin="0,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="#FFF7E3E3" Foreground="#FF330707"><Run Text="先日はお忙しい中、私たちのチームの"/><LineBreak/><Run Text="入力作業を手伝っていただき、"/><LineBreak/><Run Text="本当にありがとうございました。"/><LineBreak/><Run/><LineBreak/><Run Text="鈴木様のサポートがあり、無事、作業を"/><LineBreak/><Run Text="終えることができました！"/><LineBreak/><Run/><LineBreak/><Run Text="今後もどうぞよろしくお願いいたします。"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="15" Margin="304,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"><Run Language="ja-jp" Text="FROM:"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="15" Margin="358,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" RenderTransformOrigin="1.881,0.733"><Run Language="ja-jp" Text="宿泊部"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="15" Margin="415,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54"><Run Language="ja-jp" Text="田中○○"/></TextBlock>
         <Button Content="戻る" HorizontalAlignment="Left" Height="27" Margin="490,402,0,0" VerticalAlignment="Top" Width="65" FontSize="20" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="320,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" FontSize="14" TextAlignment="Center"><Run Language="ja-jp" Text="To:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="349,154,0,0" TextWrapping="Wrap" Text="経理部" VerticalAlignment="Top" Width="58"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="412,154,0,0" TextWrapping="Wrap" Text="すずき" VerticalAlignment="Top" Width="58"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="470,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" FontSize="14" TextAlignment="Center" RenderTransformOrigin="0.346,-0.133"><Run Language="ja-jp" Text="様"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="286,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center" FontSize="11" RenderTransformOrigin="0.25,0.267"><Run Language="ja-jp" Text="タイトル"/><Run Text="："/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="349,177,0,0" TextWrapping="Wrap" Text="入力作業を手伝っていただいた件" VerticalAlignment="Top" Width="154" FontSize="8"/>
+        <TextBox HorizontalAlignment="Center" Height="144" Margin="0,231,0,0" TextWrapping="Wrap" Text="先日は、お忙しいなか、私たちのチームの&#xD;&#xA;入力作業を手伝っていただき、&#xD;&#xA;本当にありがとうございました。&#xD;&#xA;&#xD;&#xA;すずき様のサポートがあり、無事に&#xD;&#xA;作業を終えることができました。&#xD;&#xA;&#xD;&#xA;今後もどうぞよろしくお願いいたします。" VerticalAlignment="Top" Width="276" Background="#FFF2C7FF" BorderBrush="#FF275BF9"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="349,391,0,0" TextWrapping="Wrap" Text="宿泊部" VerticalAlignment="Top" Width="58"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="412,391,0,0" TextWrapping="Wrap" Text="田中" VerticalAlignment="Top" Width="58"/>
 
     </Grid>
 </UserControl>
