@@ -29,6 +29,19 @@ namespace ThanksCardClient.ViewModels
             this.regionManager = regionManager;
         }
 
+        #region  ThanksCardCreateCommand
+        private DelegateCommand _ThanksCardCreateCommand;
+
+
+        public DelegateCommand ThanksCardCreateCommand =>
+            _ThanksCardCreateCommand ?? (_ThanksCardCreateCommand = new DelegateCommand(ExecuteThanksCardCreateCommand));
+
+        void ExecuteThanksCardCreateCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.ThanksCardCreate));
+        }
+        #endregion
+
         #region SearchWordProperty
         private string _SearchWord;
         public string SearchWord

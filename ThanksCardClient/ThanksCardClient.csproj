@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\publicdomainq-0046419vpp%281%29.png" />
     <None Remove="Views\3a9e98ebcfa94f65587b97983c20483f.png" />
     <None Remove="Views\43ad448330c42271da75a8ec071c7dba_t.jpeg" />
     <None Remove="Views\83979393_480x470.png" />
@@ -37,7 +38,7 @@
     <Resource Include="Views\images.png" />
     <Resource Include="Views\publicdomainq-0009738udz.jpg" />
     <Resource Include="Views\publicdomainq-0039164glc.jpg" />
-    <Resource Include="Views\publicdomainq-0046419vpp (1).png" />
+    <Resource Include="Views\publicdomainq-0046419vpp(1).png" />
     <Resource Include="Views\publicdomainq-0046419vpp.jpg" />
     <Resource Include="Views\thumb_d24f11bb80c7bc8695b17b3b4b9abbd2.png" />
     <Resource Include="Views\_honu-01.png" />
