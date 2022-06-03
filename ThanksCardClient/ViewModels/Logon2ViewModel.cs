@@ -66,7 +66,7 @@ namespace ThanksCardClient.ViewModels
             }
             else
             {
-                this.ErrorMessage = "ログオンに失敗しました。";
+                this.ErrorMessage = "ログオンに失敗しました。"; 
             }
         }
         #endregion
