@@ -11,6 +11,7 @@
     <None Remove="Views\122fc2412c755e5791401c4c7eb51dcd_t.jpeg" />
     <None Remove="Views\1c446555599dd337a8f1562b881bfc17_t.jpeg" />
     <None Remove="Views\23a4a850820074c16c9aa625151687b5_t.png" />
+    <None Remove="Views\7245.png" />
     <None Remove="Views\a50850da0a7fd343b029cdfd9f9ae9aa_t.png" />
     <None Remove="Views\publicdomainq-0046419vpp%281%29.png" />
     <None Remove="Views\3a9e98ebcfa94f65587b97983c20483f.png" />
@@ -41,6 +42,7 @@
     <Resource Include="Views\23a4a850820074c16c9aa625151687b5_t.png" />
     <Resource Include="Views\3a9e98ebcfa94f65587b97983c20483f.png" />
     <Resource Include="Views\43ad448330c42271da75a8ec071c7dba_t.jpeg" />
+    <Resource Include="Views\7245.png" />
     <Resource Include="Views\83979393_480x470.png" />
     <Resource Include="Views\a50850da0a7fd343b029cdfd9f9ae9aa_t.png" />
     <Resource Include="Views\f56d7dbb1607bbf89ee96c187dad8930.jpg" />

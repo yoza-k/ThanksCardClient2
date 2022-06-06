@@ -82,6 +82,17 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region  AffiliationCommand //所属管理画面へ移動
+        private DelegateCommand _AffiliationCommand;
+        public DelegateCommand AffiliationCommand =>
+            _AffiliationCommand ?? (_AffiliationCommand = new DelegateCommand(ExecuteAffiliationCommand));
+
+        void ExecuteAffiliationCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Affiliation));
+        }
+        #endregion
+
         #region  LogoutCommand　//ログアウトし、ログイン画面へ戻る
         private DelegateCommand _LogoutCommand;
         public DelegateCommand LogoutCommand =>
