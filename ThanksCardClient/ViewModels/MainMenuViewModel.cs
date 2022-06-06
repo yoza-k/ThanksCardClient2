@@ -71,6 +71,17 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region  AggregateCommand //集計画面へ移動
+        private DelegateCommand _AggregateCommand;
+        public DelegateCommand AggregateCommand =>
+            _AggregateCommand ?? (_AggregateCommand = new DelegateCommand(ExecuteAggregateCommand));
+
+        void ExecuteAggregateCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Aggregate));
+        }
+        #endregion
+
         #region  LogoutCommand　//ログアウトし、ログイン画面へ戻る
         private DelegateCommand _LogoutCommand;
         public DelegateCommand LogoutCommand =>

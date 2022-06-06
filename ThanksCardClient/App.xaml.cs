@@ -36,6 +36,7 @@ namespace ThanksCardClient
             containerRegistry.RegisterForNavigation<ReceiveCommentList>();
             containerRegistry.RegisterForNavigation<SendCardList>();
             containerRegistry.RegisterForNavigation<SendCommentList>();
+            containerRegistry.RegisterForNavigation<Aggregate>();
         }
     }
 }
