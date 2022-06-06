@@ -52,7 +52,7 @@
         <TextBlock HorizontalAlignment="Left" Height="21" Margin="71,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" Foreground="#FF0F100F" FontSize="18" TextDecorations="Underline" FontStyle="Normal"><Run Language="ja-jp" Text="集計管理"/></TextBlock>
         <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" Foreground="#FF0F100F" FontSize="18" TextDecorations="Underline"><Run Language="ja-jp" Text="所属"/><Run Text="管理"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="21" Margin="531,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Foreground="#FF0F100F" FontSize="18" TextDecorations="Underline"><Run Language="ja-jp" Text="カテゴリ"/><Run Text="管理"/></TextBlock>
-        <Button Content="" Height="33" Margin="279,360,388,0" VerticalAlignment="Top" Background="#FF6FF753" RenderTransformOrigin="0.5,0.5" BorderBrush="Black">
+        <Button Content="" Command="{Binding AffiliationCommand}" Height="33" Margin="279,360,388,0" VerticalAlignment="Top" Background="#FF6FF753" RenderTransformOrigin="0.5,0.5" BorderBrush="Black">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
