@@ -7,21 +7,22 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Width="800" Height="450" Background="#FF8DDAAB">
-        <Grid HorizontalAlignment="Left" Height="390" Margin="25,0,0,0" VerticalAlignment="Center" Width="345" Background="#FFC78441">
+        <Grid HorizontalAlignment="Left" Height="390" Margin="25,25,0,0" VerticalAlignment="Top" Width="345" Background="#FFC78441">
             <Grid.RowDefinitions>
                 <RowDefinition Height="66*"/>
                 <RowDefinition Height="119*"/>
             </Grid.RowDefinitions>
             <TextBlock HorizontalAlignment="Center" Height="325" Margin="0,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" Foreground="#FFFBF3F3" Grid.RowSpan="2" Background="#FF500909"><Run Text="Main Menu "/><Run Text="画面"/><LineBreak/><Run/><LineBreak/><Run Text="・感謝カードメニュー"/><LineBreak/><Run Text="　　　・受信カード　・送信カード　・GOODカード"/><LineBreak/><Run Text="　　　・受け取ったコメント　・送ったコメント"/><LineBreak/><Run Text="　　　以上、5つの項目を選択できるメニュー。"/><LineBreak/><Run/><LineBreak/><Run Text="・掲示板"/><LineBreak/><Run Text="　　　・今月の感謝カード代表例や、みんなの感謝カード"/><LineBreak/><Run Text="　　　コーナーがあり、カードの検索、またGOODボタンを"/><LineBreak/><Run Text="　　　押すことができる。"/><LineBreak/><Run/><LineBreak/><Run Text="・マニュアル"/><LineBreak/><Run Language="ja-jp" Text="　　　・感謝カードシステムの使い方を確認したいとき、"/><LineBreak/><Run Language="ja-jp" Text="　　　全ページから、こちらのマニュアルを参照することができる。"/><LineBreak/><Run/><LineBreak/><Run Text="・"/><Run Text="感謝カード作成"/><LineBreak/><Run Language="ja-jp" Text="　　　・送りたい相手の情報を選択し、文章を入力して、"/><LineBreak/><Run Language="ja-jp" Text="　　　簡単に送信することができる。"/></TextBlock>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="390" Margin="425,0,0,0" VerticalAlignment="Center" Width="345" Background="#FFC78441">
+        <Grid HorizontalAlignment="Left" Height="390" Margin="425,25,0,0" VerticalAlignment="Top" Width="345" Background="#FFC78441">
             <Grid.RowDefinitions>
                 <RowDefinition Height="58*"/>
                 <RowDefinition Height="127*"/>
             </Grid.RowDefinitions>
-            <TextBlock HorizontalAlignment="Center" Height="319" Margin="0,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" Foreground="#FFFBF3F3" Background="#FF500909" Grid.RowSpan="2"><Run Text="　　感謝カードメニュー画面"/><LineBreak/><Run/><LineBreak/><Run Text="　"/><Run Text="　"/><Run Text="・"/><Run Text="受信カード"/><LineBreak/><Run/><LineBreak/><Run Text="　　・送信カード"/><LineBreak/><Run/><LineBreak/><Run Text="　　・GOODカード"/><LineBreak/><Run/><LineBreak/><Run Text="　　・受け取ったコメント"/><LineBreak/><Run/><LineBreak/><Run Text="　　・送ったコメント"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="325" Margin="0,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" Foreground="#FFFBF3F3" Background="#FF500909" Grid.RowSpan="2"><Run Text="　　感謝カードメニュー画面"/><LineBreak/><Run/><LineBreak/><Run Text="　"/><Run Text="　"/><Run Text="・"/><Run Text="受信カード"/><LineBreak/><Run/><LineBreak/><Run Text="　　・送信カード"/><LineBreak/><Run/><LineBreak/><Run Text="　　・GOODカード"/><LineBreak/><Run/><LineBreak/><Run Text="　　・受け取ったコメント"/><LineBreak/><Run/><LineBreak/><Run Text="　　・送ったコメント"/></TextBlock>
         </Grid>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="55,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" TextAlignment="Center" Foreground="#FFFBF3F3" FontSize="16"><Run Language="ja-jp" Text="感謝カードシステムの使い方"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="55,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" TextAlignment="Center" Foreground="#FF500909" FontSize="16" FontWeight="Bold"><Run Language="ja-jp" Text="感謝カードシステムの使い方"/></TextBlock>
+        <Button Content="戻る" Command="{Binding BackCommand}" HorizontalAlignment="Left" Height="20" Margin="732,420,0,0" VerticalAlignment="Top" Width="58" Background="#FFECADAD" FontSize="14"/>
 
     </Grid>
 </UserControl>

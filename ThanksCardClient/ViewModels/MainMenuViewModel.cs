@@ -60,6 +60,17 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region  ManualCommand //マニュアル画面へ移動
+        private DelegateCommand _ManualCommand;
+        public DelegateCommand ManualCommand =>
+            _ManualCommand ?? (_ManualCommand = new DelegateCommand(ExecuteManualCommand));
+
+        void ExecuteManualCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Manual));
+        }
+        #endregion
+
         #region  LogoutCommand　//ログアウトし、ログイン画面へ戻る
         private DelegateCommand _LogoutCommand;
         public DelegateCommand LogoutCommand =>
