@@ -6,7 +6,69 @@
              xmlns:local="clr-namespace:ThanksCardClient.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Width="800" Height="450" Background="#FFFEB5B5">
+        <Rectangle HorizontalAlignment="Center" Height="430" Stroke="#FF020101" VerticalAlignment="Center" Width="429" Fill="#FFFAF4C5"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="412,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" FontSize="16"><Run Language="ja-jp" Text="所属"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="380,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" FontSize="16"><Run Language="ja-jp" Text="変更内容"/></TextBlock>
+        <Button Content="所属管理" HorizontalAlignment="Left" Height="30" Margin="203,172,0,0" VerticalAlignment="Top" Width="76" FontSize="18"/>
+        <Button Content="社員管理" HorizontalAlignment="Left" Height="30" Margin="203,246,0,0" VerticalAlignment="Top" Width="76" FontSize="18"/>
+        <Button Content="新規" HorizontalAlignment="Left" Height="30" Margin="300,157,0,0" VerticalAlignment="Top" Width="55" FontSize="18"/>
+        <Button Content="修正" HorizontalAlignment="Left" Height="30" Margin="300,0,0,0" VerticalAlignment="Center" Width="55" FontSize="18"/>
+        <Button Content="削除" HorizontalAlignment="Left" Height="30" Margin="300,261,0,0" VerticalAlignment="Top" Width="55" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="482,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" FontSize="16"><Run Language="ja-jp" Text="所属管理"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="482,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" FontSize="16"><Run Language="ja-jp" Text="社員"/><Run Text="管理"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="414,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" FontSize="16"><Run Language="ja-jp" Text="所属"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="382,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" FontSize="16"><Run Language="ja-jp" Text="変更内容"/></TextBlock>
+        <Button Content="決定" HorizontalAlignment="Left" Height="30" Margin="461,172,0,0" VerticalAlignment="Top" Width="55" FontSize="16"/>
+        <Button Content="キャンセル" HorizontalAlignment="Left" Height="30" Margin="534,172,0,0" VerticalAlignment="Top" Width="55" FontSize="14"/>
+        <Button Content="決定" HorizontalAlignment="Left" Height="30" Margin="461,382,0,0" VerticalAlignment="Top" Width="55" FontSize="16"/>
+        <Button Content="キャンセル" HorizontalAlignment="Left" Height="30" Margin="534,382,0,0" VerticalAlignment="Top" Width="55" FontSize="14"/>
+        <ComboBox HorizontalAlignment="Left" Height="22" Margin="461,65,0,0" VerticalAlignment="Top" Width="89"/>
+        <ComboBox HorizontalAlignment="Left" Height="22" Margin="461,275,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox HorizontalAlignment="Left" Height="64" Margin="461,92,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="128"/>
+        <TextBox HorizontalAlignment="Left" Height="64" Margin="461,303,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="128"/>
+        <Rectangle HorizontalAlignment="Left" Height="165" Margin="380,51,0,0" Stroke="Black" VerticalAlignment="Top" Width="223"/>
+        <Rectangle HorizontalAlignment="Left" Height="165" Margin="380,266,0,0" Stroke="Black" VerticalAlignment="Top" Width="223"/>
+        <TextBlock HorizontalAlignment="Left" Height="80" Margin="262,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-68.527"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Views/7245.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="80" Margin="262,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.026"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Views/7245.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button Content="戻る" Command="{Binding BackCommand}" HorizontalAlignment="Left" Height="30" Margin="650,405,0,0" VerticalAlignment="Top" Width="60" FontSize="22" Background="#FF9ECBED"/>
+        <TextBlock HorizontalAlignment="Left" Height="100" Margin="43,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-22.18"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Views/23a4a850820074c16c9aa625151687b5_t.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+
     </Grid>
 </UserControl>
