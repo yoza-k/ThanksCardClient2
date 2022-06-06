@@ -12,7 +12,7 @@
         <Button Content="文言内容" HorizontalAlignment="Left" Height="40" Margin="118,23,0,0" VerticalAlignment="Top" Width="74" Background="#FFECADAD" FontSize="18"/>
         <Button Content="検索" HorizontalAlignment="Left" Height="40" Margin="210,23,0,0" VerticalAlignment="Top" Width="74" Background="#FFECADAD" FontSize="24"/>
         <TextBlock HorizontalAlignment="Left" Height="33" Margin="96,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontSize="20"><Run Language="ja-jp" Text="☆今月の感謝カード代表例☆"/></TextBlock>
-        <Button Content="戻る" HorizontalAlignment="Left" Height="40" Margin="10,400,0,0" VerticalAlignment="Top" Width="74" Background="#FFECADAD" FontSize="24"/>
+        <Button Content="戻る" Command="{Binding BackCommand}" HorizontalAlignment="Left" Height="40" Margin="10,400,0,0" VerticalAlignment="Top" Width="74" Background="#FFECADAD" FontSize="24"/>
         <Grid HorizontalAlignment="Left" Height="103" Margin="696,102,0,0" VerticalAlignment="Top" Width="80" Background="#FFF1E6E6">
             <Grid HorizontalAlignment="Left" Height="103" Margin="696,102,0,0" VerticalAlignment="Top" Width="80" Background="#FFF1E6E6"/>
         </Grid>
@@ -79,7 +79,7 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
             <TextBlock.Background>
-                <ImageBrush ImageSource="/Views/23a4a850820074c16c9aa625151687b5_t.png"/>
+                <ImageBrush ImageSource="23a4a850820074c16c9aa625151687b5_t.png"/>
             </TextBlock.Background>
         </TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="91" Margin="330,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.5,0.5">
@@ -92,7 +92,7 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
             <TextBlock.Background>
-                <ImageBrush ImageSource="/Views/23a4a850820074c16c9aa625151687b5_t.png"/>
+                <ImageBrush ImageSource="23a4a850820074c16c9aa625151687b5_t.png"/>
             </TextBlock.Background>
         </TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="86" Margin="38,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.5,0.5">

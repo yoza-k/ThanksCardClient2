@@ -27,12 +27,12 @@
                 <ImageBrush ImageSource="/Views/images.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" Command="{Binding GoodCardListCommand}" HorizontalAlignment="Left" Height="69" Margin="185,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1">
+        <Button Content="" Command="{Binding GoodCardListCommand}" HorizontalAlignment="Left" Height="69" Margin="185,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Views/images.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" Command="{Binding SendCommentList}" HorizontalAlignment="Left" Height="69" Margin="68,272,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1">
+        <Button Content="" Command="{Binding SendCommentListCommand}" HorizontalAlignment="Left" Height="69" Margin="68,272,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1">
             <Button.Background>
                 <ImageBrush ImageSource="/Views/images.png"/>
             </Button.Background>
