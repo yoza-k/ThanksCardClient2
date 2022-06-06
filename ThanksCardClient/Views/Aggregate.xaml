@@ -38,7 +38,7 @@
         <TextBlock HorizontalAlignment="Left" Height="24" Margin="455,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29" FontSize="18"><Run Language="ja-jp" Text="枚"/></TextBlock>
         <TextBox HorizontalAlignment="Left" Height="30" Margin="386,380,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="64"/>
         <Button Content="戻る" Command="{Binding BackCommand}" HorizontalAlignment="Left" Height="30" Margin="630,398,0,0" VerticalAlignment="Top" Width="60" FontSize="22" Background="#FF9ECBED"/>
-        <TextBlock HorizontalAlignment="Left" Height="108" Margin="106,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.5,0.5">
+        <TextBlock HorizontalAlignment="Left" Height="108" Margin="50,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
