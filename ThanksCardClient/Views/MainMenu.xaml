@@ -14,30 +14,63 @@
         </Grid.Background>
         <TextBlock HorizontalAlignment="Center" Height="54" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" FontSize="36" Foreground="#FF3540EC" FontWeight="Bold"><Run Language="ja-jp" Text="&lt;&lt;MENU&gt;&gt;"/></TextBlock>
         <Button Content="ログアウト" Command="{Binding LogoutCommand}" HorizontalAlignment="Left" Height="32" Margin="562,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD"/>
-        <TextBlock HorizontalAlignment="Center" Height="70" Margin="0,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="24" Foreground="#FFEC1BC7" FontWeight="Bold"><Run Text="TOMOYOSEホテルの従業員の皆さま"/><Run Language="ja-jp" Text="、"/><LineBreak/><Run Language="ja-jp" Text="お仕事お疲れ様です。"/><LineBreak/><Run/></TextBlock>
-        <Button Content="" Command="{Binding ThanksCardMenuCommand}" HorizontalAlignment="Left" Height="69" Margin="93,156,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <TextBlock HorizontalAlignment="Center" Height="70" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="24" Foreground="#FFEC1BC7" FontWeight="Bold"><Run Text="TOMOYOSEホテルの従業員の皆さま"/><Run Language="ja-jp" Text="、"/><LineBreak/><Run Language="ja-jp" Text="お仕事お疲れ様です。"/><LineBreak/><Run/></TextBlock>
+        <Button Content="" Command="{Binding ThanksCardMenuCommand}" HorizontalAlignment="Left" Height="69" Margin="93,131,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="publicdomainq-0046419vpp(1).png"/>
             </Button.Background>
         </Button>
-        <Button Content="" Command="{Binding BulletinBoardCommand}" HorizontalAlignment="Center" Height="69" Margin="0,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Button Content="" Command="{Binding BulletinBoardCommand}" HorizontalAlignment="Center" Height="69" Margin="0,131,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="publicdomainq-0046419vpp(1).png"/>
             </Button.Background>
         </Button>
-        <Button Content="" Command="{Binding ManualCommand}" HorizontalAlignment="Left" Height="69" Margin="526,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Button Content="" Command="{Binding ManualCommand}" HorizontalAlignment="Left" Height="69" Margin="526,131,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="publicdomainq-0046419vpp(1).png"/>
             </Button.Background>
         </Button>
-        <Button Content="" Command="{Binding ThanksCardCreateCommand}" HorizontalAlignment="Center" Height="69" Margin="0,272,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Button Content="" Command="{Binding ThanksCardCreateCommand}" HorizontalAlignment="Center" Height="69" Margin="0,251,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="publicdomainq-0046419vpp(1).png"/>
             </Button.Background>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Height="21" Margin="71,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Foreground="#FF120805" FontSize="16" FontWeight="Bold"><Run Language="ja-jp" Text="感謝カードメニュー"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Foreground="#FF120805" FontSize="16" TextAlignment="Center" FontWeight="Bold"><Run Language="ja-jp" Text="掲示板"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="21" Margin="531,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Foreground="#FF120805" FontSize="16" FontWeight="Bold"><Run Language="ja-jp" Text="マニュアル"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" Foreground="#FF120805" FontSize="16" TextAlignment="Center" FontWeight="Bold"><Run Text="感謝カード"/><Run Language="ja-jp" Text="作成"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="71,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Foreground="#FF120805" FontSize="16" FontWeight="Bold"><Run Language="ja-jp" Text="感謝カードメニュー"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Foreground="#FF120805" FontSize="16" TextAlignment="Center" FontWeight="Bold"><Run Language="ja-jp" Text="掲示板"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="531,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Foreground="#FF120805" FontSize="16" FontWeight="Bold"><Run Language="ja-jp" Text="マニュアル"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" Foreground="#FF120805" FontSize="16" TextAlignment="Center" FontWeight="Bold"><Run Text="感謝カード"/><Run Language="ja-jp" Text="作成"/></TextBlock>
+        <Button Content="" Height="33" Margin="36,359,631,0" VerticalAlignment="Top" Background="#FFFBDC4A" RenderTransformOrigin="0.5,0.5" BorderBrush="Black">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.418"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="71,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" Foreground="#FF0F100F" FontSize="18" TextDecorations="Underline" FontStyle="Normal"><Run Language="ja-jp" Text="集計管理"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="21" Margin="0,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" Foreground="#FF0F100F" FontSize="18" TextDecorations="Underline"><Run Language="ja-jp" Text="所属"/><Run Text="管理"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="531,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Foreground="#FF0F100F" FontSize="18" TextDecorations="Underline"><Run Language="ja-jp" Text="カテゴリ"/><Run Text="管理"/></TextBlock>
+        <Button Content="" Height="33" Margin="279,360,388,0" VerticalAlignment="Top" Background="#FF6FF753" RenderTransformOrigin="0.5,0.5" BorderBrush="Black">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-89.576"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="" Height="33" Margin="496,360,171,0" VerticalAlignment="Top" Background="#FFF078F7" RenderTransformOrigin="0.5,0.5" BorderBrush="Black">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-89.753"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </UserControl>
