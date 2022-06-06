@@ -12,8 +12,8 @@
         <Button Content="次ページ" HorizontalAlignment="Left" Height="30" Margin="444,90,0,0" VerticalAlignment="Top" Width="61"/>
         <TextBlock HorizontalAlignment="Left" Height="30" Margin="373,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" FontSize="18"><Run Language="ja-jp" Text="1/10"/></TextBlock>
         <DataGrid Margin="216,144,224,118" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Button Content="MENU" HorizontalAlignment="Left" Height="32" Margin="514,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
-        <Button Content="戻る" HorizontalAlignment="Left" Height="32" Margin="653,391,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
+        <Button Content="MENU" Command="{Binding MainMenuCommand}" HorizontalAlignment="Left" Height="32" Margin="514,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
+        <Button Content="戻る" Command="{Binding BackCommand}" HorizontalAlignment="Left" Height="32" Margin="653,391,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
         <TextBlock HorizontalAlignment="Left" Height="32" Margin="44,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" FontSize="24"><Run Language="ja-jp" Text="送信"/><Run Text="カード一覧"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="146" Margin="29,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161">
             <TextBlock.Background>

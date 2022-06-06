@@ -49,6 +49,17 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region  BulletinBoardCommand //掲示板へ移動
+        private DelegateCommand _BulletinBoardCommand;
+        public DelegateCommand BulletinBoardCommand =>
+            _BulletinBoardCommand ?? (_BulletinBoardCommand = new DelegateCommand(ExecuteBulletinBoardCommand));
+
+        void ExecuteBulletinBoardCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.BulletinBoard));
+        }
+        #endregion
+
         #region  LogoutCommand　//ログアウトし、ログイン画面へ戻る
         private DelegateCommand _LogoutCommand;
         public DelegateCommand LogoutCommand =>

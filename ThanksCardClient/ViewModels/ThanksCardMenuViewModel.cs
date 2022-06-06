@@ -49,5 +49,35 @@ namespace ThanksCardClient.ViewModels
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.SendCardList));
         }
         #endregion
+
+        #region  GoodCardListCommand //Goodカード一覧へ画面遷移
+        private DelegateCommand _GoodCardListCommand;
+        public DelegateCommand GoodCardListCommand =>
+            _GoodCardListCommand ?? (_GoodCardListCommand = new DelegateCommand(ExecuteGoodCardListCommand));
+        void ExecuteGoodCardListCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.GoodCardList));
+        }
+        #endregion
+
+        #region  ReceiveCommentListCommand //受け取ったコメント一覧へ画面遷移
+        private DelegateCommand _ReceiveCommentListCommand;
+        public DelegateCommand ReceiveCommentListCommand =>
+            _ReceiveCommentListCommand ?? (_ReceiveCommentListCommand = new DelegateCommand(ExecuteReceiveCommentListCommand));
+        void ExecuteReceiveCommentListCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.ReceiveCommentList));
+        }
+        #endregion
+
+        #region  SendCommentListCommand //送ったコメント一覧へ画面遷移
+        private DelegateCommand _SendCommentListCommand;
+        public DelegateCommand SendCommentListCommand =>
+            _SendCommentListCommand ?? (_SendCommentListCommand = new DelegateCommand(ExecuteSendCommentListCommand));
+        void ExecuteSendCommentListCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.SendCommentList));
+        }
+        #endregion
     }
 }

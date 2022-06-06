@@ -24,6 +24,7 @@ namespace ThanksCardClient
             containerRegistry.RegisterForNavigation<MainWindow>();
             containerRegistry.RegisterForNavigation<Logon2>();
             containerRegistry.RegisterForNavigation<MainMenu>();
+            containerRegistry.RegisterForNavigation<BulletinBoard>();
             containerRegistry.RegisterForNavigation<ThanksCardCreate>();
             containerRegistry.RegisterForNavigation<ThanksCardMenu>();
             containerRegistry.RegisterForNavigation<ThanksCardDisplay>();

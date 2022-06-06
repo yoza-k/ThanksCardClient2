@@ -20,7 +20,7 @@
                 <ImageBrush ImageSource="publicdomainq-0046419vpp(1).png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Center" Height="69" Margin="0,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Button Content="" Command="{Binding BulletinBoardCommand}" HorizontalAlignment="Center" Height="69" Margin="0,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="publicdomainq-0046419vpp(1).png"/>
             </Button.Background>
