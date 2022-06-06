@@ -6,7 +6,35 @@
              xmlns:local="clr-namespace:ThanksCardClient.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Background="#FF8DDAAB" Width="800" Height="450">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="151*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="430" Stroke="Black" VerticalAlignment="Center" Width="322" Fill="#FF8392D0" Grid.Column="1" Margin="194,0,0,0"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="205,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFF7F1F7" RenderTransformOrigin="-0.098,0.05" Grid.Column="1"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="259,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFF7F1F7" RenderTransformOrigin="-0.098,0.05" Grid.Column="1"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="328,88,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFF7F1F7" RenderTransformOrigin="-0.098,0.05" Grid.Column="1"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="398,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFF7F1F7" RenderTransformOrigin="-0.098,0.05" Grid.Column="1"/>
+        <Ellipse HorizontalAlignment="Left" Height="48" Margin="451,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="53" Fill="#FFF7F1F7" RenderTransformOrigin="-0.098,0.05" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="217,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FF348224" Grid.Column="1"><Run Language="ja-jp" Text="ご"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="271,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FF348224" Grid.Column="1"><Run Language="ja-jp" Text="そ"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="340,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FF348224" Grid.Column="1"><Run Language="ja-jp" Text="う"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="409,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FF348224" Grid.Column="1"><Run Language="ja-jp" Text="だ"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="463,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontSize="36" RenderTransformOrigin="0.733,-0.308" FontWeight="Bold" Foreground="#FF348224" Grid.Column="1"><Run Language="ja-jp" Text="ん"/><Run Text="あ"/></TextBlock>
+        <Button Content="PDFで保存" HorizontalAlignment="Left" Height="21" Margin="212,59,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="258,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" FontSize="14" TextAlignment="Center" Grid.Column="1"><Run Language="ja-jp" Text="To:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="289,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="355,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="411,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26" FontSize="14" TextAlignment="Center" Grid.Column="1"><Run Language="ja-jp" Text="様"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="232,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center" Grid.Column="1"><Run Text="タイトル"/><Run Language="ja-jp" Text="："/></TextBlock>
+        <TextBox HorizontalAlignment="Center" Height="18" Margin="0,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text="(例)フロント配置の変更に関して" FontSize="11" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="144" Margin="217,231,0,0" TextWrapping="Wrap" Text="(例)&#xA;いつもお世話になっております。" VerticalAlignment="Top" Width="276" BorderBrush="#FF0643F9" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="259,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Grid.Column="1"><Run Language="ja-jp" Text="FROM:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="307,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="371,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Grid.Column="1"/>
+        <Button Content="戻る" HorizontalAlignment="Left" Height="27" Margin="445,402,0,0" VerticalAlignment="Top" Width="65" FontSize="20" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172" Grid.Column="1"/>
+        <DatePicker HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="109" Margin="203,28,0,0" BorderBrush="{x:Null}" Grid.Column="1"/>
+
     </Grid>
 </UserControl>
