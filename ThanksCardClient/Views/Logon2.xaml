@@ -20,7 +20,6 @@
             <ImageBrush ImageSource="/Views/ログイン画面.PNG"/>
         </Grid.Background>
         <TextBox Text="{Binding User.Name}" HorizontalAlignment="Left" Height="29" Margin="251,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" SelectionBrush="#FFCC00D7" BorderBrush="#FF3858B7" Grid.Column="1"/>
-        <TextBox Text="{Binding User.Password}" HorizontalAlignment="Left" Height="29" Margin="251,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" SelectionBrush="#FFCC00D7" BorderBrush="#FF163698" Grid.Column="1"/>
         <Button Content="ログイン" Command="{Binding LogonCommand}" HorizontalAlignment="Left" Height="34" Margin="271,183,0,0" VerticalAlignment="Top" Width="80" FontSize="18" BorderBrush="#FFCE6F0D" Grid.Column="1" Background="#FFEAAAAA"/>
         <TextBlock Grid.ColumnSpan="2" Margin="360,-92,-102,152" TextWrapping="Wrap">
             <TextBlock.Background>
@@ -43,6 +42,7 @@
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="186,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" FontSize="22" FontWeight="Bold"><Run Language="ja-jp" Text="名前"/></TextBlock>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="186,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" FontSize="22" FontWeight="Bold"><Run Language="ja-jp" Text="PASS"/></TextBlock>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="86" Margin="186,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" FontFamily="Algerian" FontSize="36" Foreground="#FFF14D4D"><Run Language="ja-jp" Text="TOMOYOSE"/><LineBreak/><Run Language="ja-jp" Text="HOTEL"/></TextBlock>
+        <PasswordBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="251,149,0,0" VerticalAlignment="Top" Width="200"/>
 
     </Grid>
 </UserControl>
