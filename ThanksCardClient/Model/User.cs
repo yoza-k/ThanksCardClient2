@@ -11,7 +11,7 @@ namespace ThanksCardClient.Model
 {
     internal class User : BindableBase
     {
-        //test
+        
         #region IdProperty
         private long _Id;
         public long Id
