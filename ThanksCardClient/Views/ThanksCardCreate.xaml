@@ -21,7 +21,7 @@
         <Button Content="クリア" HorizontalAlignment="Left" Height="22" Margin="186,294,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
         <Button Content="送信" HorizontalAlignment="Left" Height="22" Margin="244,294,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Height="22" Margin="94,250,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="179"/>
-        <TextBlock HorizontalAlignment="Left" Height="99" Margin="10,321,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="292" Background="#FFF9EFEF"/>
         <DatePicker SelectedDate="{Binding ThanksCard.CreatedDateTime}" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="134" Margin="10,5,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="99" Margin="10,321,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="292"/>
     </Grid>
 </UserControl>

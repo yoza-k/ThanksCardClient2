@@ -93,6 +93,17 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region  CategoryCommand //カテゴリ管理画面へ移動
+        private DelegateCommand _CategoryCommand;
+        public DelegateCommand CategoryCommand =>
+            _CategoryCommand ?? (_CategoryCommand = new DelegateCommand(ExecuteCategoryCommand));
+
+        void ExecuteCategoryCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Category));
+        }
+        #endregion
+
         #region  LogoutCommand　//ログアウトし、ログイン画面へ戻る
         private DelegateCommand _LogoutCommand;
         public DelegateCommand LogoutCommand =>
