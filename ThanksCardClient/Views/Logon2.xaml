@@ -6,6 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ThanksCardClient.Views"
+             xmlns:local1="clr-namespace:WpfPasswordBox"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Width="800" Height="450">
     <UserControl.Background>
@@ -42,7 +43,7 @@
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="186,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" FontSize="22" FontWeight="Bold"><Run Language="ja-jp" Text="名前"/></TextBlock>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="186,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" FontSize="22" FontWeight="Bold"><Run Language="ja-jp" Text="PASS"/></TextBlock>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="86" Margin="186,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" FontFamily="Algerian" FontSize="36" Foreground="#FFF14D4D"><Run Language="ja-jp" Text="TOMOYOSE"/><LineBreak/><Run Language="ja-jp" Text="HOTEL"/></TextBlock>
-        <PasswordBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="251,149,0,0" VerticalAlignment="Top" Width="200"/>
+        <PasswordBox local1:PasswordBoxHelper.Password="{Binding Path=User.Password}" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="251,149,0,0" VerticalAlignment="Top" Width="200"/>
 
     </Grid>
 </UserControl>
