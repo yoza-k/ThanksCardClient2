@@ -33,7 +33,7 @@
                 <ImageBrush ImageSource="/Views/7245.png"/>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="145" Margin="582,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160">
+        <TextBlock HorizontalAlignment="Left" Height="145" Margin="572,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160">
             <TextBlock.Background>
                 <ImageBrush ImageSource="/Views/83979393_480x470.png"/>
             </TextBlock.Background>
