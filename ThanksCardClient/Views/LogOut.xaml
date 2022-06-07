@@ -20,6 +20,7 @@
                 <ImageBrush ImageSource="/Views/_honu-01.png"/>
             </TextBlock.Background>
         </TextBlock>
+        <Button Content="ログイン画面" Command="{Binding Logon2Command}"  HorizontalAlignment="Left" Height="35" Margin="587,34,0,0" VerticalAlignment="Top" Width="182" FontSize="22" Background="#FFF5E3E3"/>
 
     </Grid>
 </UserControl>

@@ -104,14 +104,14 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
-        #region  LogoutCommand　//ログアウトし、ログイン画面へ戻る
-        private DelegateCommand _LogoutCommand;
-        public DelegateCommand LogoutCommand =>
-            _LogoutCommand ?? (_LogoutCommand = new DelegateCommand(ExecuteLogoutCommand));
+        #region  LogOutCommand　//ログアウトへ移動
+        private DelegateCommand _LogOutCommand;
+        public DelegateCommand LogOutCommand =>
+            _LogOutCommand ?? (_LogOutCommand = new DelegateCommand(ExecuteLogOutCommand));
 
-        void ExecuteLogoutCommand()
+        void ExecuteLogOutCommand()
         {
-            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Logon2));
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.LogOut));
         }
         #endregion
 
