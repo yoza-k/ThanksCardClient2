@@ -39,6 +39,7 @@ namespace ThanksCardClient
             containerRegistry.RegisterForNavigation<Aggregate>();
             containerRegistry.RegisterForNavigation<Affiliation>();
             containerRegistry.RegisterForNavigation<Category>();
+            containerRegistry.RegisterForNavigation<LogOut>();
         }
     }
 }
