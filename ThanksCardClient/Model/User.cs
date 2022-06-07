@@ -9,9 +9,8 @@ using ThanksCardClient.Services;
 
 namespace ThanksCardClient.Model
 {
-    internal class User : BindableBase
+    public class User : BindableBase
     {
-        //test
         #region IdProperty
         private long _Id;
         public long Id
@@ -20,7 +19,14 @@ namespace ThanksCardClient.Model
             set { SetProperty(ref _Id, value); }
         }
         #endregion
-
+        #region CdProperty
+        private long _Cd;
+        public long Cd
+        {
+            get { return _Cd; }
+            set { SetProperty(ref _Cd, value); }
+        }
+        #endregion
         #region NameProperty
         private string _Name;
         public string Name
@@ -29,22 +35,21 @@ namespace ThanksCardClient.Model
             set { SetProperty(ref _Name, value); }
         }
         #endregion
-
-        #region PasswordProperty
-        private string _Password;
-        public string Password
+        #region KanaNameProperty
+        private string _KanaName;
+        public string KanaName
         {
-            get { return _Password; }
-            set { SetProperty(ref _Password, value); }
+            get { return _KanaName; }
+            set { SetProperty(ref _KanaName, value); }
         }
         #endregion
 
-        #region IsAdminProperty
-        private bool _IsAdmin;
-        public bool IsAdmin
+        #region PasswordProperty
+        private long _Password;
+        public long Password
         {
-            get { return _IsAdmin; }
-            set { SetProperty(ref _IsAdmin, value); }
+            get { return _Password; }
+            set { SetProperty(ref _Password, value); }
         }
         #endregion
 

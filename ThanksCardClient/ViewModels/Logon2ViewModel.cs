@@ -41,7 +41,7 @@ namespace ThanksCardClient.ViewModels
             // 開発中のみアカウントを admin/admin でセットしておく。
             this.User = new User();
             this.User.Name = "admin";
-            this.User.Password = "admin";
+            this.User.Password = 1234;
 
         }
 
