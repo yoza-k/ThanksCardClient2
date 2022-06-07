@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ThanksCardClient.Model;
+
 namespace ThanksCardClient.ViewModels
 {
     internal class MainMenuViewModel : BindableBase, INavigationAware
@@ -128,11 +129,14 @@ namespace ThanksCardClient.ViewModels
         {
             ThanksCard thanksCard = new ThanksCard();
             this.ThanksCards = await thanksCard.GetThanksCardsAsync();
+
         }
+
         public bool IsNavigationTarget(NavigationContext navigationContext)
         {
             return true;
         }
+
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
             //throw new NotImplementedException();
