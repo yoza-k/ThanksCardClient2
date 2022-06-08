@@ -16,7 +16,7 @@ namespace ThanksCardClient.ViewModels
 {
     internal class ThanksCardCreateViewModel : BindableBase, INavigationAware
     {
-        private readonly IRegionManager regionManager;
+        private IRegionManager regionManager;
 
         #region ThanksCardProperty
         private ThanksCard _ThanksCard;
@@ -119,6 +119,22 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region ClearCommand
+        private DelegateCommand _ClearCommand;
+        public DelegateCommand ClearCommand =>
+                  _ClearCommand ?? (_ClearCommand = new DelegateCommand(ExecutClearCommand));
+        
+        void ExecutClearCommand()
+        {
+            this.regionManager = regionManager;
+
+            // テキストボックスをクリアする
+            this.ThanksCard.Title = "";
+            this.ThanksCard.Body = "";
+        }
+        #endregion
+
+
         #region  BackCommand //1つ前のページへ戻る
         private DelegateCommand _BackCommand;
         public DelegateCommand BackCommand =>
@@ -128,6 +144,7 @@ namespace ThanksCardClient.ViewModels
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.MainMenu));
         }
         #endregion
+
 
     }
 }
