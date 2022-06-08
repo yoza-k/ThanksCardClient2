@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThanksCardClient.Models;
 using ThanksCardClient.Services;
 
 namespace ThanksCardClient.Model
 {
-    internal class ThanksCard : BindableBase
+    public class ThanksCard : BindableBase
     {
         #region IdProperty
         private long _Id;
@@ -83,14 +84,23 @@ namespace ThanksCardClient.Model
         }
         #endregion
 
-        //#region ThanksCardTagsProperty
-        //private List<ThanksCardTag> _ThanksCardTags;
-        //public List<ThanksCardTag> ThanksCardTags
-        //{
-        //    get { return _ThanksCardTags; }
-        //    set { SetProperty(ref _ThanksCardTags, value); }
-        //}
-        //#endregion
+        #region ThanksCardTagsProperty
+        private long _TagId;
+        public long TagId
+        {
+            get { return _TagId; }
+            set { SetProperty(ref _TagId, value); }
+        }
+        #endregion
+        #region TagProperty
+        private Tag _Tag;
+        public Tag Tag
+        {
+            get { return _Tag; }
+            set { SetProperty(ref _Tag, value); }
+        }
+        #endregion
+
 
 
         public ThanksCard()
