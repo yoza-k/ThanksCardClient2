@@ -15,7 +15,7 @@
             <ImageBrush ImageSource="/Views/43ad448330c42271da75a8ec071c7dba_t.jpeg"/>
         </Grid.Background>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="49" Margin="222,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" FontSize="36"><Run Language="ja-jp" Text="感謝カードメニュー"/></TextBlock>
-        <Button Content="マニュアル" HorizontalAlignment="Left" Height="32" Margin="94,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD" Grid.Column="1"/>
+        <Button Content="マニュアル"  Command="{Binding ManualCommand}" HorizontalAlignment="Left" Height="32" Margin="94,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD" Grid.Column="1"/>
         <Button Content="MENU" Command="{Binding MainMenuCommand}" HorizontalAlignment="Left" Height="32" Margin="216,10,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FFE8AAAA" Background="#FFECADAD" Grid.Column="1"/>
         <Button Content="" Command="{Binding ReceiveCardListCommand}" HorizontalAlignment="Left" Height="69" Margin="91,151,0,0" VerticalAlignment="Top" Width="73" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>

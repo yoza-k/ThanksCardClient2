@@ -30,6 +30,16 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region  ManualCommand //マニュアルへ画面遷移
+        private DelegateCommand _ManualCommand;
+        public DelegateCommand ManualCommand =>
+            _ManualCommand ?? (_ManualCommand = new DelegateCommand(ExecuteManualCommand));
+        void ExecuteManualCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Manual));
+        }
+        #endregion
+
         #region  ReceiveCardListCommand //受信カード一覧へ画面遷移
         private DelegateCommand _ReceiveCardListCommand;
         public DelegateCommand ReceiveCardListCommand =>
