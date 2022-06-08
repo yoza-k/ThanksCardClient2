@@ -24,11 +24,30 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="22" Margin="94,116,0,0" VerticalAlignment="Top" Width="108"/>
-        <ComboBox  HorizontalAlignment="Left" Height="22" Margin="94,161,0,0" VerticalAlignment="Top" Width="108"/>
-        <ComboBox  ItemsSource="{Binding Tag}" HorizontalAlignment="Left" Height="22" Margin="94,206,0,0" VerticalAlignment="Top" Width="176"/>
+        <ComboBox x:Name="division" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValuePath="Parent" HorizontalAlignment="Left" Height="22" Margin="94,116,0,0" VerticalAlignment="Top" Width="108">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding divisionChangedCommand}" CommandParameter="{Binding ElementName=division, Path=SelectedValue}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ComboBox>
+        <ComboBox  x:Name="User" ItemsSource="{Binding ToUsers}" DisplayMemberPath="Name" SelectedValuePath="Id" HorizontalAlignment="Left" Height="22" Margin="94,161,0,0" VerticalAlignment="Top" Width="108">
+            
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding UserChangedCommand}" CommandParameter="{Binding ElementName=User, Path=SelectedValue}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ComboBox>
+        <ComboBox  x:Name="CategoryTag" ItemsSource="{Binding Tags}" DisplayMemberPath="Name" SelectedValuePath="Id" HorizontalAlignment="Left" Height="22" Margin="94,206,0,0" VerticalAlignment="Top" Width="176">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding CategoryTagChangedCommand}" CommandParameter="{Binding ElementName=CategoryTag, Path=SelectedValue}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ComboBox>
         <Button Content="クリア" Command="{Binding ClearCommand}" HorizontalAlignment="Left" Height="22" Margin="186,294,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
-        <Button Content="送信" HorizontalAlignment="Left" Height="22" Margin="244,294,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
+        <Button Content="送信" Command="{Binding SubmitCommand}" HorizontalAlignment="Left" Height="22" Margin="244,294,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
         <TextBox  HorizontalAlignment="Left" Height="22" Margin="94,250,0,0" TextWrapping="Wrap" Text="{Binding ThanksCard.Title}" VerticalAlignment="Top" Width="179"/>
         <DatePicker SelectedDate="{Binding ThanksCard.CreatedDateTime}" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="134" Margin="10,5,0,0"/>
         <TextBox  HorizontalAlignment="Left" Height="99" Margin="10,321,0,0" TextWrapping="Wrap" Text="{Binding ThanksCard.Body}" VerticalAlignment="Top" Width="292"/>

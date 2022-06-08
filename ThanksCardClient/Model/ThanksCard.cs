@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ThanksCardClient.Models;
+using ThanksCardClient.Model;
 using ThanksCardClient.Services;
 
 namespace ThanksCardClient.Model
@@ -92,6 +93,7 @@ namespace ThanksCardClient.Model
             set { SetProperty(ref _TagId, value); }
         }
         #endregion
+
         #region TagProperty
         private Tag _Tag;
         public Tag Tag
@@ -99,6 +101,8 @@ namespace ThanksCardClient.Model
             get { return _Tag; }
             set { SetProperty(ref _Tag, value); }
         }
+
+        public List<ThanksCardTag> ThanksCardTags { get; internal set; }
         #endregion
 
 

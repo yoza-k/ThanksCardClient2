@@ -15,6 +15,16 @@ namespace ThanksCardClient.ViewModels
     internal class ReceiveCardListViewModel : BindableBase
     {
         private readonly IRegionManager regionManager;
+
+        #region ThanksCardsProperty
+        private List<ThanksCard> _ThanksCards;
+        public List<ThanksCard> ThanksCards
+        {
+            get { return _ThanksCards; }
+            set { SetProperty(ref _ThanksCards, value); }
+        }
+        #endregion
+
         public ReceiveCardListViewModel(IRegionManager regionManager)
         {
             this.regionManager = regionManager;
