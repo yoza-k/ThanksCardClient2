@@ -1,6 +1,8 @@
 ﻿<UserControl x:Class="ThanksCardClient.Views.ThanksCardCreate"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             prism:ViewModelLocator.AutoWireViewModel="True"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ThanksCardClient.Views"
@@ -14,10 +16,17 @@
         <TextBlock HorizontalAlignment="Left" Height="22" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Background="#FFF5EDED" FontSize="16" TextAlignment="Center" FontWeight="Bold"><Run Language="ja-jp" Text="カテゴリ"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="22" Margin="10,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Background="#FFF9F3F3" FontSize="16" FontWeight="Bold" TextAlignment="Center"><Run Language="ja-jp" Text="タイトル"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="22" Margin="10,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Background="#FFF9F5F5" FontSize="16" TextAlignment="Center" FontWeight="Bold"><Run Language="ja-jp" Text="本文"/></TextBlock>
-        <ComboBox HorizontalAlignment="Left" Height="22" Margin="94,71,0,0" VerticalAlignment="Top" Width="108"/>
+        <ComboBox x:Name="FromDepartments" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValuePath="Id" HorizontalAlignment="Left" Height="22" Margin="94,71,0,0" VerticalAlignment="Top" Width="108">
+            <!-- Deparment が選択されたら FromDepartmentsChangedCommand を発行する -->
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding FromDepartmentsChangedCommand}" CommandParameter="{Binding ElementName=FromDepartments, Path=SelectedValue}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ComboBox>
         <ComboBox HorizontalAlignment="Left" Height="22" Margin="94,116,0,0" VerticalAlignment="Top" Width="108"/>
-        <ComboBox HorizontalAlignment="Left" Height="22" Margin="94,161,0,0" VerticalAlignment="Top" Width="108"/>
-        <ComboBox HorizontalAlignment="Left" Height="22" Margin="94,206,0,0" VerticalAlignment="Top" Width="176"/>
+        <ComboBox  HorizontalAlignment="Left" Height="22" Margin="94,161,0,0" VerticalAlignment="Top" Width="108"/>
+        <ComboBox x:Name="Tag" ItemsSource="{Binding Tag}" HorizontalAlignment="Left" Height="22" Margin="94,206,0,0" VerticalAlignment="Top" Width="176"/>
         <Button Content="クリア" HorizontalAlignment="Left" Height="22" Margin="186,294,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
         <Button Content="送信" HorizontalAlignment="Left" Height="22" Margin="244,294,0,0" VerticalAlignment="Top" Width="58" FontSize="14" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Height="22" Margin="94,250,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="179"/>
