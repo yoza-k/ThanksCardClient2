@@ -20,12 +20,12 @@ namespace ThanksCardClient.Model
         }
         #endregion
 
-        #region CodeProperty
-        private int _Code;
-        public int Code
+        #region CdProperty
+        private int _Cd;
+        public int Cd
         {
-            get { return _Code; }
-            set { SetProperty(ref _Code, value); }
+            get { return _Cd; }
+            set { SetProperty(ref _Cd, value); }
         }
         #endregion
 
