@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ThanksCardClient.Model;
+using ThanksCardClient.Models;
+using ThanksCardAPI.Models;
 
 namespace ThanksCardClient.Services
 {
-    internal interface IRestService
+    interface IRestService
     {
         // Logon REST API Client
         Task<User> LogonAsync(User user);
@@ -33,9 +35,9 @@ namespace ThanksCardClient.Services
         Task<ThanksCard> PostThanksCardAsync(ThanksCard thanksCard);
 
         //// Tag REST API Client
-        //Task<List<Tag>> GetTagsAsync();
-        //Task<Tag> PostTagAsync(Tag tag);
-        //Task<Tag> PutTagAsync(Tag tag);
-        //Task<Tag> DeleteTagAsync(long Id);
+        Task<List<Tag>> GetTagsAsync();
+        Task<Tag> PostTagAsync(Tag tag);
+        Task<Tag> PutTagAsync(Tag tag);
+        Task<Tag> DeleteTagAsync(long Id);
     }
 }

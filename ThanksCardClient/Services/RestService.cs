@@ -8,11 +8,12 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using ThanksCardClient.Model;
+using ThanksCardClient.Models;
 using System.Net.Http.Json;
 
 namespace ThanksCardClient.Services
 {
-    internal class RestService : IRestService
+    class RestService : IRestService
     {
         private HttpClient Client;
         private string BaseUrl;
@@ -226,6 +227,24 @@ namespace ThanksCardClient.Services
             return responseThanksCards;
         }
 
+        //public async Task<List<ThanksCard>> PostSearchThanksCardsAsync(SearchThanksCard searchThanksCard)
+        //{
+        //    List<ThanksCard> responseThanksCards = null;
+        //    try
+        //    {
+        //        var response = await Client.PostAsJsonAsync(this.BaseUrl + "/api/SearchThanksCard", searchThanksCard);
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            responseThanksCards = await response.Content.ReadFromJsonAsync<List<ThanksCard>>();
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        System.Diagnostics.Debug.WriteLine("Exception in RestService.GetThanksCardsAsync: " + e);
+        //    }
+        //    return responseThanksCards;
+        //}
+
         public async Task<ThanksCard> PostThanksCardAsync(ThanksCard thanksCard)
         {
             ThanksCard responseThanksCard = null;
@@ -244,76 +263,76 @@ namespace ThanksCardClient.Services
             return responseThanksCard;
         }
 
-        //public async Task<List<Tag>> GetTagsAsync()
-        //{
-        //    List<Tag> responseTags = null;
-        //    try
-        //    {
-        //        var response = await Client.GetAsync(this.BaseUrl + "/api/Tags");
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            responseTags = await response.Content.ReadFromJsonAsync<List<Tag>>();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        System.Diagnostics.Debug.WriteLine("Exception in RestService.GetTagsAsync: " + e);
-        //    }
-        //    return responseTags;
-        //}
+        public async Task<List<Tag>> GetTagsAsync()
+        {
+            List<Tag> responseTags = null;
+            try
+            {
+                var response = await Client.GetAsync(this.BaseUrl + "/api/Tags");
+                if (response.IsSuccessStatusCode)
+                {
+                    responseTags = await response.Content.ReadFromJsonAsync<List<Tag>>();
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine("Exception in RestService.GetTagsAsync: " + e);
+            }
+            return responseTags;
+        }
 
-        //public async Task<Tag> PostTagAsync(Tag tag)
-        //{
-        //    Tag responseTag = null;
-        //    try
-        //    {
-        //        var response = await Client.PostAsJsonAsync(this.BaseUrl + "/api/Tags", tag);
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            responseTag = await response.Content.ReadFromJsonAsync<Tag>();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        System.Diagnostics.Debug.WriteLine("Exception in RestService.PostTagAsync: " + e);
-        //    }
-        //    return responseTag;
-        //}
+        public async Task<Tag> PostTagAsync(Tag tag)
+        {
+            Tag responseTag = null;
+            try
+            {
+                var response = await Client.PostAsJsonAsync(this.BaseUrl + "/api/Tags", tag);
+                if (response.IsSuccessStatusCode)
+                {
+                    responseTag = await response.Content.ReadFromJsonAsync<Tag>();
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine("Exception in RestService.PostTagAsync: " + e);
+            }
+            return responseTag;
+        }
 
-        //public async Task<Tag> PutTagAsync(Tag tag)
-        //{
-        //    Tag responseTag = null;
-        //    try
-        //    {
-        //        var response = await Client.PutAsJsonAsync(this.BaseUrl + "/api/Tags/" + tag.Id, tag);
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            responseTag = await response.Content.ReadFromJsonAsync<Tag>();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        System.Diagnostics.Debug.WriteLine("Exception in RestService.PutTagAsync: " + e);
-        //    }
-        //    return responseTag;
-        //}
+        public async Task<Tag> PutTagAsync(Tag tag)
+        {
+            Tag responseTag = null;
+            try
+            {
+                var response = await Client.PutAsJsonAsync(this.BaseUrl + "/api/Tags/" + tag.Id, tag);
+                if (response.IsSuccessStatusCode)
+                {
+                    responseTag = await response.Content.ReadFromJsonAsync<Tag>();
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine("Exception in RestService.PutTagAsync: " + e);
+            }
+            return responseTag;
+        }
 
-        //public async Task<Tag> DeleteTagAsync(long Id)
-        //{
-        //    Tag responseTag = null;
-        //    try
-        //    {
-        //        var response = await Client.DeleteAsync(this.BaseUrl + "/api/Tags/" + Id);
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            responseTag = await response.Content.ReadFromJsonAsync<Tag>();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        System.Diagnostics.Debug.WriteLine("Exception in RestService.DeleteTagAsync: " + e);
-        //    }
-        //    return responseTag;
-        //}
+        public async Task<Tag> DeleteTagAsync(long Id)
+        {
+            Tag responseTag = null;
+            try
+            {
+                var response = await Client.DeleteAsync(this.BaseUrl + "/api/Tags/" + Id);
+                if (response.IsSuccessStatusCode)
+                {
+                    responseTag = await response.Content.ReadFromJsonAsync<Tag>();
+                }
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine("Exception in RestService.DeleteTagAsync: " + e);
+            }
+            return responseTag;
+        }
     }
 }
