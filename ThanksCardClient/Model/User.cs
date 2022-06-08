@@ -19,6 +19,7 @@ namespace ThanksCardClient.Model
             set { SetProperty(ref _Id, value); }
         }
         #endregion
+
         #region CdProperty
         private long _Cd;
         public long Cd
@@ -35,6 +36,8 @@ namespace ThanksCardClient.Model
             set { SetProperty(ref _Name, value); }
         }
         #endregion
+
+
         #region KanaNameProperty
         private string _KanaName;
         public string KanaName

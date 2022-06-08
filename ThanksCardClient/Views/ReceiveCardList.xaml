@@ -13,7 +13,23 @@
         <Button Content="戻る" Command="{Binding BackCommand}" HorizontalAlignment="Left" Height="32" Margin="653,391,0,0" VerticalAlignment="Top" Width="117" FontSize="24" BorderBrush="#FF190D0D" Background="#FFECADAD" RenderTransformOrigin="0.396,0.172"/>
         <TextBlock HorizontalAlignment="Left" Height="62" Margin="155,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" FontSize="18"><Run Language="ja-jp" Text="さんへの沢山の"/><LineBreak/><Run Language="ja-jp" Text="ありがとう"/></TextBlock>
         <Label Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="168" Margin="289,20,0,0"/>
-        <DataGrid Margin="216,144,224,118" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <DataGrid ItemsSource="{Binding ThanksCards}" AutoGenerateColumns="False" CanUserAddRows="False"  Margin="216,144,224,118">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="タイトル" Binding="{Binding Title}" />
+                <DataGridTextColumn Header="感謝の言葉" Binding="{Binding Body}" />
+                <DataGridTextColumn Header="From" Binding="{Binding From.Name}" />
+                <DataGridTextColumn Header="To" Binding="{Binding To.Name}" />
+                <DataGridTextColumn Header="作成日時" Binding="{Binding CreatedDateTime}" />
+                <DataGridTemplateColumn IsReadOnly="True" Header="タグ">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListBox ItemsSource="{Binding ThanksCardTags}" DisplayMemberPath="Tag.Name"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <Button Content="前ページ" HorizontalAlignment="Left" Height="30" Margin="289,90,0,0" VerticalAlignment="Top" Width="61"/>
         <Button Content="次ページ" HorizontalAlignment="Left" Height="30" Margin="444,90,0,0" VerticalAlignment="Top" Width="61"/>
         <TextBlock HorizontalAlignment="Left" Height="30" Margin="373,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" FontSize="18"><Run Language="ja-jp" Text="1/10"/></TextBlock>
